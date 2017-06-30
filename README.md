@@ -1,7 +1,7 @@
 # MusicGrabber
 download any song, some unpopulars may not work.
 
-pip install lxml
+pip install lxml youtube_dl
 
 1.download ffmpeg executable, put in same directory.
 
