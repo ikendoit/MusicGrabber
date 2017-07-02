@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="addSong">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>20</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>addSong</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="download">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>80</y>
+     <width>101</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>download</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="songName">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>241</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="inputMask">
+    <string>songName; </string>
+   </property>
+   <property name="text">
+    <string>songName</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="artist">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>241</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>artist</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="process">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>180</y>
+     <width>251</width>
+     <height>78</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>addSong</sender>
+   <signal>clicked()</signal>
+   <receiver>songName</receiver>
+   <slot>copy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>320</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>227</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>addSong</sender>
+   <signal>clicked()</signal>
+   <receiver>artist</receiver>
+   <slot>copy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>36</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>98</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
