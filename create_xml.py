@@ -6,7 +6,7 @@ from xml.dom import minidom
 from xml.dom.minidom import parseString
           
 id =0; 
-print("1: add video info \n2: delete video \n3:nothing, get me out.")
+print("1: add song info \n2: delete song \n3:nothing, get me out.")
 option = int(input("input the option ")); 
 while (option != 3):
 	if (option == 1 ) : 
@@ -25,8 +25,8 @@ while (option != 3):
 		video.append(status);
 		video.append(link)
 		# input 
-		songName = str(raw_input("input name: "));
-		artistName = str(raw_input("input artist name: "));
+		songName = str(input("input name: "));
+		artistName = str(input("input artist name: "));
 
 		name.text = songName; 
 		artist.text = artistName; 
@@ -47,7 +47,7 @@ while (option != 3):
 		f.write(etree.tostring(root,pretty_print=True))
 		f.close();
 
-		print("1: add video info \n2: delete video \n3:nothing, get me out.")
+		print("1: add song info \n2: delete song \n3:nothing, get me out.")
 		option = int(input("input the option ")); 
 
 	if (option == 2) : 
