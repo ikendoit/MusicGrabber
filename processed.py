@@ -20,5 +20,5 @@ def delete(link):
         video.getparent().remove(video)
 
     f = open("data.xml",'w')
-    f.write(etree.tostring(tree,pretty_print = True, xml_declaration = True))
+    f.write(etree.tostring(tree,pretty_print = True, xml_declaration = True,encoding="unicode"))
     f.close()
