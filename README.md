@@ -1,5 +1,7 @@
 # MusicGrabber
 
+require : Python 2.5 -> 2.7
+
 GUI version of our program
 
 using PyQt4. which is in Anaconda package
