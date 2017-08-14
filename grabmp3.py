@@ -1,8 +1,6 @@
 import youtube_dl
 
 def grab(name, link):
-	print(name)
-	print(link)
 	options = {
 		'format':'bestaudio/best',
 		'extractaudio':True,

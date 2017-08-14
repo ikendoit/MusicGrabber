@@ -1,4 +1,4 @@
-#!/usr/bin/python3.5
+#!/usr/bin/python
 from lxml import etree
 from io import StringIO
 from grablink import call_link
@@ -25,8 +25,8 @@ while (option != 3):
 		video.append(status);
 		video.append(link)
 		# input 
-		songName = str(input("input name: "));
-		artistName = str(input("input artist name: "));
+		songName = str(raw_input("input name: "));
+		artistName = str(raw_input("input artist name: "));
 
 		name.text = songName; 
 		artist.text = artistName; 
