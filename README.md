@@ -3,13 +3,16 @@ download any song, some unpopulars may not work.
 
 pip install lxml youtube_dl
 
-1.download ffmpeg executable, put in same directory.
+apt-get install ffmpeg
 
-\n 2. run MainProgram for the whole application. 
 
-\n 3. follow the steps, add song name+ artist name, then run download songs option.
+\n 1. run MainProgram for the whole application. 
 
-\n 4. if there is any bug, please tell me for modification.
+\n 2. follow the steps, add song name+ artist name
+
+\n 3. After adding songs info, choose "3" to exit 
+
+\n 4. then: python MainProgram.py download 
 
 
 
